@@ -6,7 +6,6 @@
 #include "Components/ActorComponent.h"
 #include "DoorInteractionComponent.generated.h"
 
-class ATriggerBox;
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class UNREALMAZEGAME_API UDoorInteractionComponent : public UActorComponent
@@ -33,9 +32,4 @@ protected:
 		float TimeToRotate = 1.0f;
 	float CurrentRotationTime = 0.0f;
 		
-	UPROPERTY(EditAnywhere)
-		ATriggerBox* TriggerBox;
-
-	UPROPERTY(EditAnywhere)
-		FRuntimeFloatCurve OpenCurve;
 };
