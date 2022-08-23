@@ -6,6 +6,6 @@
 
 AInteractableDoor::AInteractableDoor()
 {
-	DoorInteractionComponent = CreateDefaultObject<UDoorInteractionComponent>(TEXT("DoorInteractionComponent"));
+	DoorInteractionComponent = CreateDefaultSubobject<UDoorInteractionComponent>(TEXT("DoorInteractionComponent"));
 	
 }
